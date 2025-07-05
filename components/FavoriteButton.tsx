@@ -30,10 +30,10 @@ export default function FavoriteButton({ quote }: { quote: string }) {
     <button
       onClick={toggleFavorite}
       aria-label={isFavorite ? "Remove from favorites" : "Add to favorites"}
-      className="hover:scale-110 transition-transform"
+      className="hover:scale-110 transition-transform duration-300"
     >
       <Heart 
-        className={`h-6 w-6 ${isFavorite ? "text-red-500 fill-red-500" : "text-gray-400 hover:text-red-500"}`}
+        className={`h-6 w-6 ${isFavorite ? "text-primary-brown fill-primary-brown" : "text-primary-cream/60 hover:text-primary-brown"}`}
       />
     </button>
   );

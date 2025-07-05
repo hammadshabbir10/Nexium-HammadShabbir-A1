@@ -18,10 +18,15 @@ export default function RootLayout({
           <link rel="icon" href="/favicon.ico" />
           <title>Quote Generator</title>
         </head>
-        <body className={inter.className + " bg-gray-900 text-white"}>
-          <Navbar />
-          {children}
-          <Footer />
+        <body className={inter.className + " bg-gradient-hero min-h-screen text-white relative overflow-x-hidden"}>
+          <div className="absolute inset-0 bg-gradient-to-br from-primary-navy/20 via-transparent to-primary-brown/20"></div>
+          <div className="relative z-10">
+            <Navbar />
+            <main className="flex-1">
+              {children}
+            </main>
+            <Footer />
+          </div>
         </body>
       </html>
     </HistoryProvider>

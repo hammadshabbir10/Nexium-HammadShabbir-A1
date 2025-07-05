@@ -5,21 +5,21 @@ import { cva, type VariantProps } from "class-variance-authority"
 import { cn } from "@/lib/utils"
 
 const buttonVariants = cva(
-  "inline-flex items-center justify-center rounded-md text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:opacity-50 disabled:pointer-events-none ring-offset-background",
+  "inline-flex items-center justify-center rounded-xl text-sm font-semibold transition-all duration-300 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary-beige focus-visible:ring-offset-2 disabled:opacity-50 disabled:pointer-events-none ring-offset-background",
   {
     variants: {
       variant: {
-        default: "bg-primary text-primary-foreground hover:bg-primary/90",
-        destructive: "bg-destructive text-destructive-foreground hover:bg-destructive/90",
-        outline: "border border-input hover:bg-accent hover:text-accent-foreground",
-        secondary: "bg-secondary text-secondary-foreground hover:bg-secondary/80",
-        ghost: "hover:bg-accent hover:text-accent-foreground",
-        link: "underline-offset-4 hover:underline text-primary",
+        default: "bg-gradient-to-r from-primary-navy to-primary-brown text-white hover:from-primary-navy/90 hover:to-primary-brown/90 shadow-professional hover:shadow-custom-hover hover:-translate-y-1",
+        destructive: "bg-gradient-to-r from-red-600 to-red-700 text-white hover:from-red-600/90 hover:to-red-700/90 shadow-professional hover:shadow-custom-hover hover:-translate-y-1",
+        outline: "border-2 border-primary-sage/40 text-white hover:bg-primary-navy/30 hover:text-white backdrop-blur-sm bg-transparent hover:border-primary-sage/60",
+        secondary: "bg-gradient-to-r from-primary-sage to-primary-beige text-primary-black hover:from-primary-sage/90 hover:to-primary-beige/90 shadow-professional hover:shadow-custom-hover hover:-translate-y-1",
+        ghost: "hover:bg-primary-navy/30 hover:text-primary-beige text-white transition-colors rounded-xl",
+        link: "underline-offset-4 hover:underline text-primary-beige hover:text-white font-medium",
       },
       size: {
-        default: "h-10 py-2 px-4",
-        sm: "h-9 px-3 rounded-md",
-        lg: "h-11 px-8 rounded-md",
+        default: "h-12 py-3 px-6",
+        sm: "h-10 px-4 rounded-lg",
+        lg: "h-14 px-10 rounded-xl text-base",
       },
     },
     defaultVariants: {

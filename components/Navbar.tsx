@@ -14,6 +14,7 @@ const navLinks = [
   { href: "/favorites", label: "Favorites" },
   { href: "/history", label: "History" },
   { href: "/my-quotes", label: "My Quotes" },
+  { href: "/feedback", label: "Feedback" },
 ];
 
 export default function Navbar() {

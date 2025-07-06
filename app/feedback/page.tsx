@@ -60,7 +60,7 @@ export default function FeedbackPage() {
                 className="input-professional w-full text-base md:text-lg placeholder:text-base md:placeholder:text-lg"
                 value={to}
                 onChange={e => setTo(e.target.value)}
-                placeholder="Recipient's email address"
+                placeholder="hammadshabbir507@gmail.com"
               />
               {errors.to && <div className="text-red-400 text-sm mt-1">{errors.to}</div>}
             </div>

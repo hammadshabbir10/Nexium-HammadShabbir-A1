@@ -148,7 +148,7 @@ export default function QuoteGenerator() {
                   </div>
                   <div className="flex items-start space-x-4">
                     <Quote className="h-8 w-8 text-primary-gold mt-2 flex-shrink-0" />
-                    <blockquote className="text-lg md:text-xl italic text-high-contrast leading-relaxed text-left">
+                    <blockquote className="quote-text-mobile text-base md:text-xl italic text-high-contrast leading-relaxed text-left">
                       "{quote}"
                     </blockquote>
                   </div>
@@ -159,7 +159,7 @@ export default function QuoteGenerator() {
                 <div className="flex items-start space-x-4">
                   <Quote className="h-8 w-8 text-primary-gold mt-2 flex-shrink-0" />
                   <div className="text-left">
-                    <blockquote className="text-lg md:text-xl italic text-high-contrast leading-relaxed">
+                    <blockquote className="quote-text-mobile text-base md:text-xl italic text-high-contrast leading-relaxed">
                       "The only limit to our realization of tomorrow is our doubts of today."
                     </blockquote>
                     <p className="mt-4 text-base md:text-lg text-medium-contrast font-medium">

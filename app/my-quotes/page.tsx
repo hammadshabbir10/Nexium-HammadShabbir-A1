@@ -89,11 +89,11 @@ export default function MyQuotesPage() {
           <div className="space-y-6">
             <div className="flex items-center justify-center space-x-3 mb-4">
               <Edit3 className="h-8 w-8 text-primary-gold" />
-              <h1 className="heading-primary text-5xl font-bold tracking-tight">
+              <h1 className="heading-primary text-4xl md:text-5xl font-bold tracking-tight">
                 My Own Quotes
               </h1>
             </div>
-            <p className="text-xl text-high-contrast max-w-2xl mx-auto leading-relaxed font-medium">
+            <p className="text-lg md:text-xl text-high-contrast max-w-2xl mx-auto leading-relaxed font-medium">
               Your personal collection of wisdom and inspiration. Share your thoughts with the world.
             </p>
             {error && (
@@ -114,20 +114,15 @@ export default function MyQuotesPage() {
                   <div className="flex items-start space-x-4">
                     <User className="h-8 w-8 text-primary-gold mt-2 flex-shrink-0" />
                     <div className="flex-1 text-left">
-                      <blockquote className="text-2xl italic text-high-contrast leading-relaxed">
+                      <blockquote className="text-lg md:text-xl italic text-high-contrast leading-relaxed">
                         "{quote.quote}"
                       </blockquote>
                       <div className="mt-4 text-sm text-subtle">
                         Created on {formatDate(quote.createdAt)}
                       </div>
                     </div>
-                    <div className="flex space-x-2 opacity-0 group-hover:opacity-100 transition-all duration-300">
-                      <button
-                        className="hover:scale-110 transition-transform duration-300 p-2 rounded-full bg-primary-navy/20 hover:bg-primary-navy/30"
-                        aria-label="Edit quote"
-                      >
-                        <Edit3 className="h-5 w-5 text-primary-gold" />
-                      </button>
+                    <div className="flex space-x-2 opacity-100 md:opacity-0 md:group-hover:opacity-100 transition-all duration-300">
+                    
                       <button
                         onClick={() => deleteQuote(quote.id)}
                         className="hover:scale-110 transition-transform duration-300 p-2 rounded-full bg-red-500/20 hover:bg-red-500/30"
@@ -144,10 +139,10 @@ export default function MyQuotesPage() {
                 <div className="flex items-center justify-center space-x-4">
                   <Quote className="h-12 w-12 text-primary-gold/50" />
                   <div className="text-left">
-                    <blockquote className="text-2xl italic text-high-contrast leading-relaxed">
+                    <blockquote className="text-lg md:text-xl italic text-high-contrast leading-relaxed">
                       "You haven't saved any quotes yet. Start sharing your wisdom!"
                     </blockquote>
-                    <p className="mt-4 text-lg text-medium-contrast font-medium">
+                    <p className="mt-4 text-base md:text-lg text-medium-contrast font-medium">
                       Go back to the main page and save your own inspirational quotes.
                     </p>
                   </div>

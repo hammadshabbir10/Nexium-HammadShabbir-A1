@@ -120,7 +120,7 @@ export default function QuoteGenerator() {
           <div className="space-y-6">
             <div className="flex items-center justify-center space-x-3 mb-4">
               <Sparkles className="h-8 w-8 text-primary-gold animate-pulse" />
-              <h1 className="heading-primary text-6xl font-bold tracking-tight">
+              <h1 className="heading-primary text-4xl md:text-6xl font-bold tracking-tight">
                 Quote Generator
               </h1>
             </div>
@@ -148,7 +148,7 @@ export default function QuoteGenerator() {
                   </div>
                   <div className="flex items-start space-x-4">
                     <Quote className="h-8 w-8 text-primary-gold mt-2 flex-shrink-0" />
-                    <blockquote className="text-2xl italic text-high-contrast leading-relaxed text-left">
+                    <blockquote className="text-lg md:text-xl italic text-high-contrast leading-relaxed text-left">
                       "{quote}"
                     </blockquote>
                   </div>
@@ -159,10 +159,10 @@ export default function QuoteGenerator() {
                 <div className="flex items-start space-x-4">
                   <Quote className="h-8 w-8 text-primary-gold mt-2 flex-shrink-0" />
                   <div className="text-left">
-                    <blockquote className="text-2xl italic text-high-contrast leading-relaxed">
+                    <blockquote className="text-lg md:text-xl italic text-high-contrast leading-relaxed">
                       "The only limit to our realization of tomorrow is our doubts of today."
                     </blockquote>
-                    <p className="mt-4 text-lg text-medium-contrast font-medium">
+                    <p className="mt-4 text-base md:text-lg text-medium-contrast font-medium">
                       — Franklin D. Roosevelt
                     </p>
                   </div>
@@ -174,10 +174,10 @@ export default function QuoteGenerator() {
           {/* Input Section */}
           <div className="space-y-8 w-full max-w-2xl mx-auto">
             <div className="space-y-4">
-              <h2 className="heading-secondary text-3xl font-bold mb-6">Generate New Quotes</h2>
+              <h2 className="heading-secondary text-2xl md:text-3xl font-bold mb-6">Generate New Quotes</h2>
               <Input
                 type="text"
-                placeholder="Generate inspiring quotes about..."
+                placeholder="Type a topic..."
                 value={topic}
                 onChange={(e) => setTopic(e.target.value)}
                 onKeyDown={(e) => e.key === 'Enter' && handleGenerateQuotes()}
@@ -199,7 +199,7 @@ export default function QuoteGenerator() {
                   </span>
                 ) : (
                   <span className="flex items-center justify-center">
-                    Generate Inspiring Quotes
+                    Create Quote
                   </span>
                 )}
               </Button>
@@ -207,7 +207,7 @@ export default function QuoteGenerator() {
 
             {/* Custom Quote Section */}
             <div className="space-y-4 pt-8 border-t border-primary-gold/20">
-              <h2 className="heading-secondary text-3xl font-bold mb-6">Share Your Wisdom</h2>
+              <h2 className="heading-secondary text-2xl md:text-3xl font-bold mb-6">Share Your Wisdom</h2>
               <div className="relative">
                 <Input
                   type="text"

@@ -57,12 +57,12 @@ export default function HistoryPage() {
           <div className="space-y-6">
             <div className="flex items-center justify-center space-x-3 mb-4">
               <Clock className="h-8 w-8 text-primary-gold" />
-              <h1 className="heading-primary text-5xl font-bold tracking-tight">
+              <h1 className="heading-primary text-4xl md:text-5xl font-bold tracking-tight">
                 Quote History
               </h1>
               
             </div>
-            <p className="text-xl text-high-contrast max-w-2xl mx-auto leading-relaxed font-medium">
+            <p className="text-lg md:text-xl text-high-contrast max-w-2xl mx-auto leading-relaxed font-medium">
               Your journey through inspiring quotes. Every search, every moment of inspiration.
             </p>
             {history.length > 0 && !selectedItem && (
@@ -96,7 +96,7 @@ export default function HistoryPage() {
                 <div className="flex items-center justify-between mb-6">
                   <div className="flex items-center space-x-3">
                     <Clock className="h-6 w-6 text-primary-gold" />
-                    <h3 className="heading-secondary text-2xl font-bold">
+                    <h3 className="heading-secondary text-xl md:text-2xl font-bold">
                       "{selectedItem.topic}"
                     </h3>
                   </div>
@@ -106,7 +106,7 @@ export default function HistoryPage() {
                   {selectedItem.quotes.map((quote, quoteIndex) => (
                     <div key={quoteIndex} className="flex items-start space-x-4 p-4 rounded-2xl bg-primary-navy/20">
                       <Quote className="h-6 w-6 text-primary-gold mt-1 flex-shrink-0" />
-                      <blockquote className="text-lg italic text-high-contrast leading-relaxed text-left">
+                      <blockquote className="quote-text-mobile text-base md:text-lg italic text-high-contrast leading-relaxed text-left">
                         "{quote}"
                       </blockquote>
                     </div>
@@ -126,21 +126,21 @@ export default function HistoryPage() {
                     <div className="flex items-center justify-between mb-6">
                       <div className="flex items-center space-x-3">
                         <Clock className="h-6 w-6 text-primary-gold" />
-                        <h3 className="heading-secondary text-2xl font-bold">
+                        <h3 className="heading-secondary text-xl md:text-2xl font-bold">
                           "{item.topic}"
                         </h3>
                       </div>
                       <div className="flex space-x-2">
                         <button
                           onClick={() => viewQuotes(item)}
-                          className="opacity-0 group-hover:opacity-100 transition-all duration-300 hover:scale-110 p-2 rounded-full bg-primary-navy/20 hover:bg-primary-navy/30"
+                          className="opacity-100 md:opacity-0 md:group-hover:opacity-100 transition-all duration-300 hover:scale-110 p-2 rounded-full bg-primary-navy/20 hover:bg-primary-navy/30"
                           aria-label="View quotes"
                         >
                           <ArrowRight className="h-5 w-5 text-primary-gold" />
                         </button>
                         <button
                           onClick={() => removeHistoryItem(index)}
-                          className="opacity-0 group-hover:opacity-100 transition-all duration-300 hover:scale-110 p-2 rounded-full bg-red-500/20 hover:bg-red-500/30"
+                          className="opacity-100 md:opacity-0 md:group-hover:opacity-100 transition-all duration-300 hover:scale-110 p-2 rounded-full bg-red-500/20 hover:bg-red-500/30"
                           aria-label="Remove from history"
                         >
                           <Trash2 className="h-5 w-5 text-red-400" />
@@ -158,10 +158,10 @@ export default function HistoryPage() {
                   <div className="flex items-center justify-center space-x-4">
                     <Clock className="h-12 w-12 text-primary-gold/50" />
                     <div className="text-left">
-                      <blockquote className="text-2xl italic text-high-contrast leading-relaxed">
+                      <blockquote className="quote-text-mobile text-lg md:text-xl italic text-high-contrast leading-relaxed">
                         "No history yet. Start generating quotes to see them here!"
                       </blockquote>
-                      <p className="mt-4 text-lg text-medium-contrast font-medium">
+                      <p className="mt-4 text-base md:text-lg text-medium-contrast font-medium">
                         Your quote generation history will appear here.
                       </p>
                     </div>

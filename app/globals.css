@@ -174,12 +174,24 @@
 .container-professional {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 0 2rem;
+  padding: 0 1rem;
+}
+
+@media (min-width: 768px) {
+  .container-professional {
+    padding: 0 2rem;
+  }
 }
 
 .section-professional {
-  padding: 4rem 0;
+  padding: 2rem 0;
   position: relative;
+}
+
+@media (min-width: 768px) {
+  .section-professional {
+    padding: 4rem 0;
+  }
 }
 
 .section-professional::before {
@@ -190,6 +202,29 @@
   right: 0;
   height: 1px;
   background: linear-gradient(90deg, transparent 0%, rgba(170, 166, 148, 0.5) 50%, transparent 100%);
+}
+
+/* Mobile-specific improvements */
+@media (max-width: 767px) {
+  .card-professional {
+    padding: 1.5rem !important;
+    margin: 0 0.5rem 1.25rem 0.5rem !important;
+  }
+  
+  .btn-professional {
+    padding: 0.75rem 1.5rem;
+    font-size: 0.875rem;
+  }
+  
+  .input-professional {
+    padding: 0.75rem 1rem;
+    font-size: 0.875rem;
+  }
+  
+  .quote-text-mobile {
+    font-size: 1.1rem !important;
+    line-height: 1.6 !important;
+  }
 }
 
 /* High contrast text utilities - WHITE TEXT FOR DARK BACKGROUND */

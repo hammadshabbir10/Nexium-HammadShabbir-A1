@@ -57,3 +57,28 @@ The app is fully responsive and works great on all devices.
 Pull requests are welcome! For major changes, please open an issue first to discuss what you would like to change.
 
 
+## Screen Shots 
+
+
+![Image](https://github.com/user-attachments/assets/c146f244-4dc5-408e-9024-99200c2a55f3)
+
+
+
+![Image](https://github.com/user-attachments/assets/2bdd397b-086c-4cb3-ac7a-57c482bfe054)
+
+
+
+![Image](https://github.com/user-attachments/assets/a7d49f06-c3e3-46c1-92cc-ed41d64e318c)
+
+
+
+![Image](https://github.com/user-attachments/assets/624839ce-855d-44d8-b284-37e3da81b27c)
+
+
+
+![Image](https://github.com/user-attachments/assets/033462ed-0f7f-4ea9-bb60-eb33e35e36e3)
+
+
+
+![Image](https://github.com/user-attachments/assets/0cb53a54-f558-4915-9c0e-8fb1a0806251)
+
